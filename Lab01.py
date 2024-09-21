@@ -12,9 +12,10 @@
 import random
 
 # Game introduction.
-# Give the user instructions as to what he or she will be doing.
 print('This is the "guess a number" game.')
+# Give the user instructions as to what he or she will be doing.
 print('You try to guess a random number in the smallest number of attempts.')
+
 
 # Prompt the user for how difficult the game will be. Ask for an integer.
 value_max = int(input("Please input a positive integer: "))
