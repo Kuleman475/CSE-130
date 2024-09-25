@@ -3,10 +3,13 @@
 # 2. Assignment Name:
 #      Lab 02: Authentication
 # 3. Assignment Description:
-#      It is essentially a log in where the user puts in a username and password and if the username and password are in the same spot on the list it should tell you that you are authenticated.
+#      It is essentially a log in where the user puts in a username and password 
+#      and if the username and password are in the same spot on the list it should 
+#      tell you that you are authenticated.
 # 4. What was the hardest part? Be as specific as possible.
 #      The hardest part for me was having the python file read the json file.
-#      once I was able to figure out how to read it then figuring out how to put it into a list was also a bit of a challenge.
+#      once I was able to figure out how to read it then figuring out how to put 
+#      it into a list was also a bit of a challenge.
 #      After I was able to figure that out the assignment went pretty smoothly.
 # 5. How long did it take for you to complete the assignment?
 #      1.5 hours
