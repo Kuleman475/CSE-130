@@ -1,4 +1,5 @@
 import json
+import math
 
 userInput = int(input("which Json file would you like to open? \n 1. Countries \n 2. Empty \n 3. Language \n 4. Trivial \n 5. Quit \n"))
 
@@ -19,20 +20,30 @@ else:
 data = json.load(file)
 max = len(data["array"])
 min = 0
+middle = 0
 
-
-while(min != max):
-
+while(min != middle or max != middle):
     middle = (min + max) / 2  
-    if ascii(data["array"][middle]) == ascii("Python"):
+    if ascii(data["array"][int(float(middle))]) == ascii("United States of America"):
         print("what your looking for is in the list")
-    elif ascii(data["array"][middle]) < ascii("Python"):
-        min = middle + 1
+        min = int(float(middle))
+        max = int(float(middle))
+    # elif math.isclose(min, max, abs_tol= 1):
+    #     print("item not on the list")
+    #     min = int(float(middle))
+    #     max = int(float(middle))
+    elif ascii(data["array"][int(float(middle))]) < ascii("United States of America"):
+        min = int(float(middle)) + 1
+        print("Greater half")
+    elif ascii(data["array"][int(float(middle))]) > ascii("United States of America"):
+        max = int(float(middle)) - 1
+        print("lesser half")
     else:
-        max = middle - 1
+        print("item not available")
+        min = int(float(middle))
+        max = int(float(middle))
 
-
-#         unction binarySearch(list, target):
+# function binarySearch(list, target):
 # start = 0
 # end = length(list) - 1
 # while start <= end:
