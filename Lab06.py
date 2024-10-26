@@ -1,5 +1,19 @@
 import json
 import math
+
+# 1. Name:
+#      -Taylor Christensen-
+# 2. Assignment Name:
+#      Lab 06: Advanced Search
+# 3. Assignment Description:
+#      -The program is supposed to efficiently search through a list and find the item in the list without looking at each and every item in the list-
+# 4. Algorithmic Efficiency
+#      -O(log n) because it is only looking at 1 item on the list and seeing if it needs to go up or down on the list -
+# 5. What was the hardest part? Be as specific as possible.
+#      -The hardest part for me was getting the program to find the item if it was in the big list and it find the item. -
+# 6. How long did it take for you to complete the assignment?
+#      -3 hours
+
 for i in range(7):
     userInput = int(input("which Json file would you like to open? \n 1. Empty \n 2. Trivial \n 3. Language \n 4. Countries \n 5. Quit \n"))
     print()
