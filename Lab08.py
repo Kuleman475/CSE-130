@@ -3,11 +3,19 @@ import json
 
 def sortList(data):
     max = len(data["array"])
-    for i in range(max):
+
+    while 1 <= max:
+        for t in range(max):
+            select = t
+            for j in range(max):
+                if ascii(data["array"][j]) > ascii(data["array"][select]):
+                    select = j
+            data["array"][select], data["array"][t] = data["array"][t], data["array"][select]
+        max -= 1
+
+    for i in range(len(data["array"])):
         print(data["array"][i])
-    
-    # # SWITCH THINGS IN THE ARRAY JSON
-    # data["array"][6], data["array"][0] = data["array"][0], data["array"][6]
+
 
 userInput = int(input("which Json file would you like to open? \n 1. Empty \n 2. Trivial \n 3. Language \n 4. States \n 5. Cities \n 6. Quit \n"))
 print()
