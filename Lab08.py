@@ -3,8 +3,9 @@ import json
 
 def sortList(data):
     max = len(data["array"])
-
+    assert (max > 0, "List is empty")
     while 1 <= max:
+        assert max <= 0
         for t in range(max):
             select = t
             for j in range(max):
@@ -51,5 +52,5 @@ elif userInput == 5:
 
 
 else:
-    print("incorrect input please use correct input")
+    assert (userInput > 5, "incorrect input please use correct input")
 
