@@ -1,11 +1,23 @@
 import json
 
+# 1. Name:
+#      -Taylor Christensen-
+# 2. Assignment Name:
+#      Lab 08: Sort
+# 3. Assignment Description:
+#      -take an unsorted list and sort it-
+# 4. What was the hardest part? Be as specific as possible.
+#      -the hardest part for me was getting the list to be fully sorted. I could get it partially sorted but then not fully sorted or a couple of items were flip flopped.
+#       for example the languages would be C C# python C++ and the rest was similarly organized. I was able to figure out how to get it fixed.-
+# 5. How long did it take for you to complete the assignment?
+#      -3 Hours
+
 
 def sortList(data):
     max = len(data["array"])
-    assert (max > 0, "List is empty")
+    assert len(data["array"]) > 0, "List is empty"
     while 1 <= max:
-        assert max <= 0
+        assert max > 0
         for t in range(max):
             select = t
             for j in range(max):
@@ -45,6 +57,8 @@ elif userInput == 4:
     print("What is the name of the file? states.json")
 
 elif userInput == 5:
+    assert userInput == 5, "incorrect input please use correct input"
+
     file = open("Lab08.cities.json", "r")
     data = json.load(file)
     sortList(data)
@@ -52,5 +66,5 @@ elif userInput == 5:
 
 
 else:
-    assert (userInput > 5, "incorrect input please use correct input")
 
+    assert userInput > 5, "incorrect input please use correct input"
