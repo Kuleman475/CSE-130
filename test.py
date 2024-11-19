@@ -1,8 +1,3 @@
-from datetime import datetime
+monthDays = {'January': 31, 'February': 28, 'March': 31, 'April': 30, 'May': 31, 'June': 30, 'July': 31, 'August': 31, 'September': 30, 'October': 31, 'November': 30, 'December': 31}
 
-name = input("What is your name? ")
-print(f"Hello {name}")
-currentYear = datetime.now().year
-birthYear = int(input("What year were you born? "))
-yourAge = currentYear - birthYear
-print(f"your age is {yourAge}")
+print()
