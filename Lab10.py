@@ -5,23 +5,32 @@ def is_leap_Year(startYear):
 	else:    return 28
 
 totalDays = 0
-startDay = 22
-startMonth = "May"
-startYear = 2020
-endDay = 25
-endMonth = "December"
-endYear = 2024
+startDay = 21
+startMonth = "October"
+startYear = 1999
+
+endDay = 4
+endMonth = "March"
+endYear = 2004
 
 monthDays = {'January': 31, 'February': is_leap_Year(startYear), 'March': 31, 'April': 30, 'May': 31, 'June': 30, 'July': 31, 'August': 31, 'September': 30, 'October': 31, 'November': 30, 'December': 31}
 
-list(monthDays)
+months = list(monthDays.keys())
 
+totalDays = monthDays[startMonth] - startDay 
+y = 0
+while startMonth != months[y]:
+	y+=1
 
-x = monthDays.keys()
-totalDays = startDay - monthDays[startMonth]
-while (startYear != endYear & startMonth != endMonth & startDay != endDay):
-	totalDays += list(monthDays[startMonth])[x]
-	x += 1
-	if x > 12:
-		x = 1
+y+=1
+print(months[y])
+while months[y] != endMonth or startYear != endYear:
+	totalDays += monthDays[months[y]]
+	print(totalDays, monthDays[months[y]], months[y], startYear)
+	y += 1
+	if y == 12:
+		y = 0
+		startYear += 1
+		monthDays['February'] = is_leap_Year(startYear)
+totalDays += endDay
 print(f"total number of days: {totalDays}")
