@@ -1,3 +1,14 @@
+# 1. Name:
+#      -Taylor Christensen-
+# 2. Assignment Name:
+#      Lab 10: Number of Days
+# 3. Assignment Description:
+#      -count how many days are between two dates-
+# 4. What was the hardest part? Be as specific as possible.
+#      -the hardest part was figuring out how to count between december and january of the next year when they are close together dates.-
+# 5. How long did it take for you to complete the assignment?
+#      -3.5 hours
+
 
 def is_leap_Year(startYear):
 	if (startYear % 4 == 0 and startYear % 100 != 0) or (startYear % 400 == 0):
