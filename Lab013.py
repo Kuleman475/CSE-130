@@ -15,7 +15,6 @@ UserInput = input("Pick a List \n 1. Banana.txt \n 2. Small.json \n 3. Large.jso
 assert UserInput in ["1", "2", "3"], "Input needs to be 1, 2, or 3 :)"
 Subset = int(input("Pick a subset number: "))
 assert Subset is not int
-
 match UserInput:
     case "1":
         print("incorrect type of file\n Goodbye!")
